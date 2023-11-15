@@ -1,6 +1,7 @@
 package iter
 
-type Iterator[T any] interface {
+// Iterator interface like java.util.Iterator<E>
+type Iterator[E any] interface {
 	HasNext() bool
-	Next() T
+	Next() E
 }
